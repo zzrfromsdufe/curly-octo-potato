@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>自动跳转到随机链接</title>
+<script>
+// 定义一个包含六个链接的数组
+var links = [
+    "https://www.wjx.cn/vm/myeKxUM.aspx# ",
+    "https://www.wjx.cn/vm/eDh6YND.aspx# ",
+    "https://www.wjx.cn/vm/YD3CAYZ.aspx# ",
+    "https://www.wjx.cn/vm/eMNzWsY.aspx# ",
+    "https://www.wjx.cn/vm/Q6lQQ82.aspx# ",
+    "https://www.wjx.cn/vm/whxzbDq.aspx# "
+];
+
+// 页面加载完成后自动跳转到随机链接
+window.onload = function() {
+    var randomIndex = Math.floor(Math.random() * links.length);
+    window.location.href = links[randomIndex];
+};
+</script>
+</head>
+<body>
+<!-- 页面内容 -->
+</body>
+</html>
